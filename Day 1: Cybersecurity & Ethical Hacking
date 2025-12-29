@@ -1,0 +1,78 @@
+
+1. Core Philosophy: "Do No Harm"
+
+You are a White Hat – authorized to test & help.
+
+Penetration Testing = legal, authorized simulation.
+
+Never test without explicit written permission. Unauthorized access is a crime.
+
+2. Key Terminology
+
+Vulnerability: Weakness in a system.
+
+Exploit: Code/technique that uses a vulnerability.
+
+Payload: Malicious action of an exploit.
+
+Reconnaissance: Information gathering phase.
+
+3. The Mindset
+
+Problem-solver, not vandal.
+
+Be curious & think "How could this break?"
+
+Systematic, not random.
+
+4. The 5-Phase Framework
+
+Reconnaissance (Gather intel)
+
+Scanning (Find openings)
+
+Gaining Access (Exploit)
+
+Maintaining Access (Persistence test)
+
+Covering Tracks (Know it for defense, don't do it in authorized tests)
+
+5. Build Your Safe Lab
+
+Never practice on real networks you don't own.
+
+Use VirtualBox/VMware + Kali Linux (attacker VM) + Metasploitable (target VM).
+
+Isolated environment is mandatory.
+
+6. Command Line is Essential
+
+Linux (Kali): Learn ls, cd, pwd, grep, sudo
+
+Windows: ipconfig, ping, netstat
+
+7. Networking Basics
+
+Understand: IP & MAC addresses, TCP vs. UDP, Ports (80/HTTP, 443/HTTPS, 22/SSH), Client-Server model.
+
+8. Tool Awareness
+
+Nmap: Network/port scanner.
+
+Wireshark: Packet analyzer.
+
+Metasploit: Exploitation framework (just know it exists for now).
+
+9. Legal & Ethical Foundation
+
+Scope of work is your rulebook – never exceed it.
+
+Study CEH or (ISC)² Code of Ethics.
+
+10. Learning Path
+
+Start with TryHackMe (beginner-friendly labs).
+
+Certification path: Security+ → PenTest+/CEH.
+
+Cybersecurity is a marathon – build fundamentals first.
