@@ -1,0 +1,38 @@
+IPv4 Addresses: The classic numerical label for devices.
+Example: Finding multiple failed login attempts to your server from the IP 94.130.49.50 logs you to a German hosting provider often used by attackers.
+
+IPv6 Addresses: The newer, longer format to accommodate more internet devices.
+Example: A corporate firewall log shows a connection from 2001:db8:85a3:8d3:1319:8a2e:370:7348, 
+indicating a modern network-capable device, possibly a smartphone or IoT sensor.
+
+Private IP Ranges: Addresses used inside a local network (like your home or office).
+Example: In your office, your workstation has the private IP 10.10.15.105. An attacker on the same Wi-Fi can target it, 
+but someone on the internet cannot directly reach this address.
+
+Public IP Ranges: Globally unique addresses assigned by your ISP.
+Example: Your entire office appears to the internet under a single public IP, like 203.0.113.87. 
+All outbound traffic (e.g., to Google) originates from this address.
+
+Domain Names: Human-readable aliases for IP addresses.
+Example: Instead of remembering 142.250.185.78, you simply type google.com into your browser.
+
+Domain Structure: The breakdown of a web address into parts.
+Example: In secure.paypal.com, .com is the Top-Level Domain (TLD), paypal is the domain name, 
+and secure is a subdomain handling encrypted transactions.
+
+DNS Importance: The "phonebook" of the internet that translates names to IPs.
+Example: Before a phishing email link fake-bank-login[.]com can load, your computer asks a DNS server for its IP. 
+Security tools can block this request if the domain is known to be malicious.
+
+Ports: Specific "doors" on a device for different services.
+Example: A port scan on a target server shows port 22 (SSH) and 80 (HTTP) open, but also an unexpected 31337 (common for backdoors). 
+This signals a potential compromise.
+
+Protocols: The set of rules for how data is formatted and transmitted.
+Example: You intercept traffic. Packets using the HTTP protocol show login credentials in plain text, 
+while HTTPS packets are encrypted and unreadable, highlighting a security weakness.
+
+Synthesis for Investigation: Combining all elements to trace an attack.
+Example: An alert triggers for a login to the finance server. You trace the Public IP (185.220.101.34) to a VPN service. 
+DNS history shows it recently resolved to c2.malware-group[.]net. The connection was on Port 443 (HTTPS), blending in with normal traffic, 
+confirming a sophisticated, covert breach attempt.
